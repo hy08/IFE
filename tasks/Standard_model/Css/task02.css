@@ -1,0 +1,163 @@
+html{
+    background: rgba(51,51,51,0.15);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:100%; /*text-size-adjust 属性 允许我们控制将文本溢出算法应用到一些手机设备上。这个属性还没有写进标准，使用时必须加上前缀*/
+}
+body{
+    font:16px/30px "微软雅黑";
+}
+h2,p{
+    margin: .67em 0;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+h2,.author,.time{
+    color: #999;
+}
+/*header样式*/
+header{
+    width: 93%;
+    min-height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 1% 2% 0 5%;
+}
+header h1{
+    width:20%;
+    float: left;
+}
+header li{
+   float: right;
+   margin-left: 1em;
+}
+header a{
+    color: #fff;
+}
+header a:hover{
+    color: #999;
+    text-decoration: none;
+}
+/*清除浮动*/
+.clearfix:before,
+form:before,
+form:after,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after,form:after{
+    clear: both;
+}
+.clearfix,form {
+    zoom: 1;
+} /* IE < 8 */
+
+/*功能区样式*/
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+main article,aside{
+    width:96%;
+    background: #fff;
+    box-shadow: 2px 2px 2px #666 ;
+    padding: 3% 2%;
+    margin-top: 20px;
+}
+main p{
+    text-indent: 2em;;
+}
+main .imgs{
+    color: #000;
+}
+figure .imgBox{
+    width:180px;
+    height: 180px;
+    text-align:center;
+    border: 1px solid #999999;
+    padding: 9px;  
+    margin:20px 0;  
+}
+figure img{
+    width:160px;
+    height:140px;
+}
+ol{
+    list-style: decimal;
+    margin-left:40px;
+}
+table{
+    width:100%;
+    border:1px solid #999;
+}
+table thead{
+    background-color:#000;
+    color:#fff;
+}
+table tfoot{
+    background-color:rgba(128, 128, 128, 0.56)
+}
+
+/*侧栏样式*/
+aside{
+    width:91%;
+    margin: 40px auto 20px;
+}
+aside h1{
+    border-left: 4px solid gainsboro;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 10px;
+}
+
+form .formContent{
+    width: 68%;
+    position: relative;
+    left: 32%;
+}
+.formContent .absoulteOne{
+    position: absolute;
+    right: 42em;
+    margin-right: 2em;
+}
+div.absoulteTwo{
+    width: 80%;
+}
+.formContent .absoulteTwo{
+    position: relative;
+    left: 9em;
+}
+.formContent input{
+    margin-bottom: 10px;
+}
+.formContent p{
+    color: #999;
+    width: 20em;
+    margin:0;
+}
+.formContent textarea{
+    width: 77%;
+    height: 85px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0677d4;
+}
+
+/*页脚部分*/
+footer{
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
