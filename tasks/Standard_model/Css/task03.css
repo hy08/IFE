@@ -1,0 +1,57 @@
+body{
+    font:16px/30px "微软雅黑";
+    padding: 20px;
+}
+.wrap{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    min-width: 600px;
+}
+.teamName,.teamIntroduce,.personLogo{
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 20px;
+}
+.teamName{
+    width: 158px;
+    float: left;
+}
+.teamName img{
+    width:80px;
+    height: 80px;
+    float: left;
+    margin-right: 20px;
+}
+.teamIntroduce{
+    float: left;
+    width: calc(100% - 402px); /*设置中间宽度为父元素内容宽度-另外两个盒子的总宽度*/
+    margin: 0 20px;
+}
+.teamIntroduce p{
+    text-indent: 2em;
+}
+.personLogo{
+    width: 78px;
+    float: left;
+}
+.personLogo img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+} /* IE < 8 */
