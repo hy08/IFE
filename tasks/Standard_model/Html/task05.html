@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>task02</title>
-        <link rel="stylesheet" href="../Css/init.css" />
-        <link rel="stylesheet" href="../Css/task02.css" />
-    </head>
-    <body>
-        <!--页眉部分,role="banner",可以告诉屏幕阅读器它的作用是保存横幅图片-->
-        <header ="clearfix" role="banner">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task05</title>
+		<link rel="stylesheet" href="../Css/init.css" />
+		<link rel="stylesheet" href="../Css/task05.css" />
+	</head>
+	<body>
+	     <!--页眉部分,role="banner",可以告诉屏幕阅读器它的作用是保存横幅图片-->
+        <header class="clearfix" role="banner">
             <h1><a href="#"><img src="../Imgs/baidu_logo.png" /></a></h1>
             <nav>
                 <ul>
-                    <li><a href="#">导航连接一</a></li>
                     <li><a href="#">导航连接一</a></li>
                     <li><a href="#">导航连接一</a></li>
                     <li><a href="#">导航连接一</a></li>
@@ -75,7 +74,7 @@
             </article>
             <article>
                 <h2 class="imgs">图片</h2>
-                <figure>
+                <figure class="clearfix">
                     <div class="imgBox">
                         <figcaption>好看的图片</figcaption>
                         <img src="http://oltqt8zyb.bkt.clouddn.com/feng.jpg" />    
@@ -154,10 +153,10 @@
                 </table>
             </article>
         </main><!--主要功能区结束-->
-        <aside>
+       <aside>
             <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
             <form>
-                <div class="formContent">
+                <div class="formContent cclearfix">
                     <div>
                         <label class="labelR" for="email">请输入邮箱地址：</label>
                         <input id="email" type="text" placeholder="这是一个文本输入框" />
@@ -201,6 +200,5 @@
             </form>
         </aside>
         <footer>版权所有&copy;劳动韩</footer>
-    </body>
+	</body>
 </html>
-

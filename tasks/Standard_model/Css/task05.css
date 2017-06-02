@@ -5,6 +5,7 @@ html{
 }
 body{
     font:16px/30px "微软雅黑";
+    min-width: 800px;
 }
 h2,p{
     margin: .67em 0;
@@ -40,34 +41,17 @@ header a:hover{
     color: #999;
     text-decoration: none;
 }
-/*清除浮动*/
-.clearfix:before,
-form:before,
-form:after,
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-.clearfix:after,form:after{
-    clear: both;
-}
-.clearfix,form {
-    zoom: 1;
-} /* IE < 8 */
-
 /*功能区样式*/
 main{
-    width: 95%;
-    margin: 0 auto;
+    float: left;
+    width: calc(100% - 450px);
+    margin:20px 20px 0;
 }
-main article,aside{
-    width:96%;
+main article{
     background: #fff;
     box-shadow: 2px 2px 2px #666 ;
-    padding: 3% 2%;
-    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 main p{
     text-indent: 2em;;
@@ -81,7 +65,8 @@ figure .imgBox{
     text-align:center;
     border: 1px solid #999999;
     padding: 9px;  
-    margin:20px 0;  
+    margin:10px; 
+    float: left; 
 }
 figure img{
     width:160px;
@@ -105,9 +90,12 @@ table tfoot{
 
 /*侧栏样式*/
 aside{
-    width:91%;
-    margin: 40px auto 20px;
-    position: relative;
+    float: left;
+    width: 350px;
+    background: #fff;
+    box-shadow: 2px 2px 2px #666 ;
+    padding: 20px;
+    margin: 20px 20px 0 0;
 }
 aside h3{
     border-left: 4px solid gainsboro;
@@ -125,8 +113,8 @@ aside h3{
 }
 .formContent p{
     color: #999;
-    width: 20em;
-    margin: 0 0 0 44%;
+    font-size: 14px;
+    margin: 0 0 30px 44%;
     padding-left: 1em;
 }
 .formContent textarea{
@@ -145,9 +133,24 @@ input[type="submit"]{
 
 /*页脚部分*/
 footer{
-    height: 50px;
+    clear: both;
+    height: 30px;
     background-color: rgba(0,0,0,0.8);
     color: #fff;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+} /* IE < 8 */
