@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+.tablist {
+  position:relative;
+  margin:50px auto;
+  min-height:200px;
+}
+.tab_content {
+  position: absolute;
+  width:600px;
+  height:170px;
+  padding:15px;
+  border:1px solid #91a7b4;
+  color:#666;
+  background:#fff;
+}
+
+/* 这行最重要  */
+#tab1:target, #tab2:target, #tab3:target {
+  z-index: 1;
+}
+
+.tabmenu {
+  position:absolute;
+  top:100%;margin:0;
+}
+.tabmenu li{
+  display:inline-block;
+}
+.tabmenu li a {
+  display:block;
+  padding:5px 10px;
+  margin:0 10px 0 0;
+  border:1px solid #91a7b4;
+  background:#e3f1f8;
+  color:#333;
+}
+		</style>
+	</head>
+	<body>
+<div class="tablist">
+    <ul class="tabmenu">
+        <li><a href="#tab1">标签一</a></li>
+        <li><a href="#tab2">标签二</a></li>
+        <li><a href="#tab3">标签三</a></li>
+    </ul>
+    <div id="tab1" class="tab_content">tab1</div>
+    <div id="tab2" class="tab_content">tab2</div>
+    <div id="tab3" class="tab_content">tab3</div>
+    <!-- div要有背景色，选中之后更改z-index -->
+</div>
+	</body>
+</html>

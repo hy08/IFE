@@ -1,0 +1,534 @@
+body{
+    font: 14px/18px "宋体";
+    background-color: #fff;
+}
+.wrap{
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+/*头部开始*/
+header{
+    height: 57px;
+}
+.logo{
+    width: 200px;
+    height: 57px;
+    line-height: 57px;
+    padding-left: 101px;
+    background: rgba(0, 0, 0, 0) url("../Imgs/task07Imgs/top_logo.png") no-repeat 60px 13px;
+    color: rgb(57, 58, 58);
+    font-family: "黑体";
+    font-size: 21px;
+    float: left;
+}
+header nav{
+    float: right;
+    margin-right: 25px;
+}
+header nav li{
+    width: 100px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    float: left;
+}
+header nav li a{
+    font-family: "Microsoft YaHei";
+    display: block; /*高度本不可继承,但是将行内元素转换为块级元素,则行高起到了作用*/
+}
+header nav a:link,header nav a:visited{
+    color: #787b83;
+}
+header nav a:hover,header nav a:active{
+    color: #ea6b60;
+    border-bottom: 3px solid rgb( 231, 79, 77 );
+    text-decoration: none;
+}
+header nav .login a, header nav .indexLink a{
+    color: rgb( 231, 79, 77 );
+}
+header nav .login{
+    background: url(../Imgs/task07Imgs/top_login.png) no-repeat 19px 19px;  
+}
+/*头部结束*/
+/*第一部分开始*/
+main .first{
+    height: 691px;
+    background: url(../Imgs/task07Imgs/one_bg.png) no-repeat;
+    /*遮罩层怎么搞*/
+}
+.first .firstContent{
+    padding:286.2px 0 0 116.3px;
+    font:21px "微软雅黑";
+    color: #fff;
+}
+.firstContent h2{
+    font-size: 60px; 
+}
+.firstContent p{
+    margin-left: 5px;
+}
+.firstContent button{
+    border-width: 0;
+    background-color: #e74f4d;
+    color: #fff;
+    width: 331px;
+    height: 65px;
+    margin-top: 66px;
+}
+/*第一部分结束*/
+/*第二部分开始*/
+.second{
+    height: 250px;
+    padding-left: 15px;
+}
+.second .second_fl{
+    height: 116.5px;
+    text-align: center;
+    width: 316px;
+    padding-top: 133.5px;
+    float: left;
+}
+.second_fl p{
+    border-right: 1px solid #767777;
+    font:14px/18px "黑体";
+    color: #767777;
+}
+.second_fl:nth-child(4) p{
+    border-right: none;
+}
+.second_fl:nth-child(1){
+    background: url(../Imgs/task07Imgs/second_yuan.png) no-repeat 140px 45px;
+}
+.second_fl:nth-child(2){
+    background: url(../Imgs/task07Imgs/second_qi.png) no-repeat 140px 45px;
+}
+.second_fl:nth-child(3){
+    background: url(../Imgs/task07Imgs/second_hua.png) no-repeat 140px 45px;
+}
+.second_fl:nth-child(4){
+    background: url(../Imgs/task07Imgs/second_lei.png) no-repeat 140px 45px;
+}
+/*第二部分结束*/
+/*第三部分开始*/
+.third{
+    height: 361px;
+    text-align: center;
+    background-color: #edecec;
+    font:53.59px/56.6px "黑体";
+    color: #d1d1d1;
+}
+.third img{
+    margin-top: 89px;
+}
+.third p{
+    margin-top: 48.4px;
+}
+/*第三部分结束*/
+/*第四部分开始*/
+.fourth{
+    height: 341px;
+    background: rgba(238,214,214,0.2) url(../Imgs/task07Imgs/map.png) no-repeat 0 -610px;
+    font: 12px/26.55px "微软雅黑";
+    color: #fff;
+    text-align: center;
+}
+.searchText{
+    padding-top: 52.6px;
+    margin-bottom: 51.5px;
+}
+.searchText p:first-child{
+    font-size: 21px;
+    line-height: 41.88px;
+}
+.searchText hr{
+    width: 35px;
+    border: none;
+    border-top:2px solid #fff;
+    margin: 0 auto 1em;
+}
+.selectBox,.fourth input[type="submit"]{
+    width: 236px;
+    color: #a8aaaa;
+    float: left;
+    margin-right: 28px;
+}
+.fourth .selectBox:first-child{
+    margin-left: 126px;
+}
+.selectBox input[type="text"]{
+    width: 219.5px;
+    height: 32px;
+    border: 2px solid #fff;
+    padding-left: 12.5px;
+    background: #fff url(../Imgs/select.png) no-repeat 97%;
+}
+.fourth input[type="submit"]{
+    height: 36px;
+    background-color: #be4f48;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+}
+#province,.province ul{
+    border: 1px solid #be4f48;
+}
+.province ul{
+    width: 232px;
+    background-color: #e3e3e4;
+    margin-left: 1px;
+}
+.province ul li{
+    color: #89898a;
+    text-align: left;
+    text-indent: 32.5px;
+}
+.province ul li:hover{
+    background: #be4f48 url(../Imgs/task07Imgs/gou.png) no-repeat 10px;
+    color: #fff;
+}
+/*第四部分结束*/
+/*第五部分开始*/
+.fifth{
+    height: 605px;
+    background-color: #f7f7f7;
+    font:14px/26.55px "微软雅黑";
+    color: #bdbdbd;
+}
+.fifth figure{
+    width: 992px;
+    margin: 0 auto;
+    padding-top: 101px;
+}
+.textBottom,.textTop{   
+    float: left;
+    margin-right: 36px;
+    text-align: center;
+}
+figure .textBottom:nth-child(4){
+    margin-right: 0;
+}
+.imgBox{
+    width: 219px;
+    height: 337px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+}
+.textBottom h4{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+}
+.textTop h4{
+    font-size: 20px;
+    color: #000;
+}
+/*第五部分结束*/
+/*第六部分开始*/
+.sixthL{
+    width: 850px;
+    height: 567px;
+    background: url(../Imgs/task07Imgs/sixth.png) no-repeat 0 100%;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font:21.91px/43.15px "微软雅黑";
+}
+.sixthL p:first-child{
+    font-size: 49.47px;
+    line-height: 49.58px;
+    padding-top: 130px;
+}
+.sixthL .LCenterText{
+    font-size: 157.79px;
+    line-height: 135.06px;
+    margin-bottom: 24px;
+}
+.sixthL p:last-child{
+    margin-left: -33px;
+}
+.sixthR{
+    width:430px;
+    height: 567px;
+    float: left;
+    text-align: center;
+    font-size: 12px;  
+    font-family: "微软雅黑";
+    position: relative;
+}
+.sixthR i{
+    position: absolute;
+    /*画三角开始*/
+    width:0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 24px solid #fff;
+    /*画三角结束*/
+    left: -24px;
+    top: 49%;
+}
+#sixthRTab1,#sixthRTab2,#sixthRTab3{
+    width: 288px;
+    margin: 165px 0 0;
+}
+.sixthR h4{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.sixthR .RTred{
+    color: #e74f4d;
+}
+.sixthR p{
+    line-height: 30px;
+    color: #aaa;
+    text-align: left;
+    margin-bottom: 45px;
+}
+.sixthR button{
+    width: 107px;
+    height: 35px;
+    border: 1px solid #e25c60;
+    background: #fff;   
+    color: #e25c60;
+    margin-bottom:20px ;
+}
+.sixthR .btns{
+    margin-top:440px;
+}
+.sixthR .btns a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.sixthR .btns a:hover{
+    background-color: #919192;
+}
+/*利用target实现轮播*/
+.tabs{
+    width: 288px;
+    margin: 0 auto;
+    position: relative;
+}
+#sixthRTab1,#sixthRTab2,#sixthRTab3{
+    position: absolute;
+    background: #fff; /*每个块要设置背景色，可以遮盖下一层的内容*/
+}
+#sixthRTab1:target,#sixthRTab2:target,#sixthRTab3:target{
+    z-index: 1;  /*设置了绝对定位,则可以通过z-index属性展示层级*/
+}
+/*第六部分结束*/
+/*第七部分开始*/
+.seventh{
+    font: 21px/30.36px "黑体";
+}
+.seventhC,.seventhL,.seventhR{
+    float: left;
+    width: calc(100%/3);
+    height: 521px;
+    text-align: center;
+}
+.seventhL{
+    background-color: #e74f4d;
+    color: #fff;
+}
+.seventhL p,.seventhC p{
+    margin-bottom: 20px;
+}
+.seventhL hr,.seventhC hr,.top hr{
+    border:none;
+    border-top:2px solid #fff;
+    width: 30px;
+    margin: 0 auto 20px;
+}
+.seventhL button,.seventhC button{
+    width: 170px;
+    height: 44px;
+    background: #e74f4d;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.seventhC hr{
+    border-top:2px solid #666;
+}
+.seventhC button{
+    background: #fff;
+    color: #e74f4d;
+    border: 1px solid #e74f4d;
+}
+.seventhC{
+    position: relative;
+}
+.seventhC i{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 24px solid #fff;
+    position: absolute;
+    right:-24px;
+    top: 49%;
+}
+.seventhR{
+    background: url(../Imgs/task07Imgs/seventh_img.png) no-repeat;
+}
+/*第七部分结束*/
+/*第八部分结开始*/
+.eighth{
+    height: 749px;
+    font-size: 12px;
+    line-height: 21px;
+}
+.eighth .top{
+    height: 182.6px;
+    text-align: center;
+    padding-top: 118.4px;
+}
+.top h4{
+    font:21px/30.36px "黑体";
+    margin-bottom: 10px;
+}
+.top hr{
+    border-top:2px solid #e74f4d;
+    margin-bottom: 10px;
+}
+.top p{
+    color: #aaa;
+}
+
+.eighth .left{
+    float: left;
+    width: 287px;
+    margin: 0 76.2px 0 138.8px;
+}
+.left .claim{
+    margin-bottom: 39.4px;
+}
+.left .claim h5{
+    margin-bottom: 20px;
+    font-family: "黑体";
+    font-size: 14px;
+}
+.left .claim:last-child h5{
+    margin-bottom: 0;
+}
+.left .claim p,.left .claim span{
+    color: #aaa;
+}
+.claim .moreContent{
+    float: right;
+    width: 40px;
+    padding-left: 15px;
+    background: url(../Imgs/task07Imgs/more.png) no-repeat 0;
+}
+.eighth .right{
+    float: left;
+    width: 639px;
+}
+.right input[type="text"],.right textarea,.right input[type="submit"]{
+    border: none;
+    background-color: #edecee;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.right input[type="text"]{
+    width: 290px;
+    height: 41px;
+}
+.right input[type="text"]:nth-child(1),.right input[type="text"]:nth-child(3){
+    margin-right: 13px;
+}
+.right textarea{
+    width: 619px;
+    height: 121px;
+    padding-top: 10px;
+}
+.right input[type="submit"]{
+    width: 639px;
+    height: 41px;
+    padding: 0;
+    text-align: center;
+    color: #000;
+}
+/*第八部分结束*/
+/*页脚部分开始*/
+footer{
+    height: 416px;
+    color: #fff;
+}
+footer .footerMain{
+    height: 268.8px;
+    background-color: #32353e;
+    text-align: center;
+    padding-top:92.2px;
+}
+.footerMain h4{
+    font:21px/48.37px "黑体";
+}
+.footerMain p{
+    color: #aaa;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+.footerMain input{
+    border: none;
+    margin-bottom: 40px;
+}
+.footerMain input[type="email"]{
+    width: 421px;
+    height: 41px;
+    padding-left: 10px;
+}
+.footerMain input[type="submit"]{
+    width: 81px;
+    height: 41px;
+    background-color: #6f7278;
+    color: #fff;
+    margin-left: -7px;
+}
+.socialIcons img{
+    margin-right: 20px;
+}
+.footerOther{
+    height: 55px;   
+    background-color: #2f2f38;
+}
+.footerOther .FOL{
+    float: left;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+.footerOther .FOR{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+/*页脚部分结束*/
+/*flex法垂直居中*/
+.flex{
+    display: flex;
+}
+.marginAuto{
+    margin: auto;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+} /* IE < 8 */
