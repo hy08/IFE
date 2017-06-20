@@ -1,3 +1,6 @@
+body{
+    background-color: #eeedec;
+}
 /*页眉部分*/
 header{
     width: 100%;
@@ -16,32 +19,126 @@ header img{
     margin-right: 94px;
     margin-top: 14px;
 }
-.fr input[type="text"]{
+.fr div[type="text"]{
     width: 280px;
     height: 28px;
     border-radius: 14px;
     border: none;
-    background: #fff url(../Imgs/task08Imgs/search.png) no-repeat 18px;
+    background: #fff url(../Imgs/task09Imgs/search.png) no-repeat 18px;
     padding-left: 33px;
 }
 .fr input[type="submit"]{
     width: 50px;
     border: none;
-    background: transparent url(../Imgs/task08Imgs/person.png) no-repeat;
+    background: transparent url(../Imgs/task09Imgs/person.png) no-repeat;
     color: #fff;
     margin-left: 21px;
     text-indent: 20px; 
 }
-/*内容左部*/
+
 main{
     overflow: hidden; /*为什么没有这条设置就会留白*/
     width: 1280px;
+    margin: auto;
 }
+/*内容左部*/
 main aside{
     width: 261px;
     min-height: 1213px;
     background-color: #2a2e3d;
     float: left;
+}
+aside .introduction{
+    padding: 17px 0 23px;
+}
+.top .circle{
+    float: left;
+    width: 57px;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 45px;
+}
+.circle .content{
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    margin-top: 5px;
+    background-color: #b9babd;
+    border-radius: 50%;
+}
+.personName{
+    font:16px/1.281 "SimHei";
+    color: #fff;
+    float: left;
+    margin: 20px 0 0 20px;
+}
+.bottom div{
+    width: 60px;
+    float: left;
+    font:12px/12.96px "宋体";
+    color: #5F6E81;
+}
+.bottom div:first-child{
+    margin:25px 0 0 62px;
+    border-right:2px solid #5f6e81;
+}
+.bottom div:last-child{
+    margin: 25px 0 0 35px;
+}
+#collection,#fans{
+    font:16px/18px "simhei";
+}
+aside ul{
+    font:14px/16px "simhei";
+    color: #5F6E81;
+}
+aside ul>li{
+    margin-bottom: 10px;
+    padding: 10px 0 10px 55px;
+}
+.report{
+    background: #383d4e url(../Imgs/task09Imgs/report_form.png) no-repeat 35px 12px;
+    
+}
+aside ul li.select,aside ul li ol li.select{
+    color: #dbdbde;
+}
+aside ul li ol{
+    color: #5F6E81;
+}
+aside ul li:hover{
+    color: #dbdbde;
+    background-color: #383d4e;
+}
+.report  ol > li{
+    padding: 15px 0 0;
+    text-indent: 20px;
+    background: url(../Imgs/task09Imgs/mark.png) no-repeat 0 18px;
+}
+.report > ol > li:nth-child(2){
+    background: url(../Imgs/task09Imgs/mark.png) no-repeat 0 -12px;
+}
+.report > ol > li i{
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: url(../Imgs/task09Imgs/floder.png) no-repeat;
+    padding-right: 5px;
+}
+.report > ol > li > ol li{
+    margin-left: 40px;
+    background: url(../Imgs/task09Imgs/document.png) no-repeat 0 18px;
+}
+.keep,.imgs,.grow{
+    background: url(../Imgs/task09Imgs/star.png) no-repeat 35px 12px;
+}
+.share{
+    background: url(../Imgs/task09Imgs/share.png) no-repeat 35px 12px;
+}
+.messages{
+    background: url(../Imgs/task09Imgs/message.png) no-repeat 35px 12px;
 }
 /*内容右部*/
 main .mainContain{
@@ -49,4 +146,476 @@ main .mainContain{
     min-height: 1213px;
     background-color: #eeedec;
     float: left;
+}
+.mainContain .nav{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    padding-left: 30px;
+}
+.mainContain .nav a{
+    color: #5F6E81;
+}
+.mainContain .nav a:last-child{
+    color: #82a8cb;
+}
+/*第一部分*/
+select,input[type="datetime"]{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance: none; 
+    appearance: none;
+    height: 26px;
+    padding-left: 8px;
+    margin:0 30px 0 10px;
+    background: url(../Imgs/task09Imgs/mainArrow.png) no-repeat;
+}
+.first,.second,.third,.fourth,.fifth{
+    margin: 0 auto;
+    color: #cfcfcf;
+    font:12px/26px "simhei";
+    margin-top: 20px;
+}
+.first{
+    width: 859px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding:15px 0 15px 30px;
+    position: relative;
+}
+.buyer,.date,.allTime{
+    margin-bottom: 5px;
+}
+.first .query,.first .peopleNumber,.first .allTime{
+    width:71px;
+    background-position: 55px 9px;
+}
+.first .buyer,.first .seller,.first .volume{
+    width: 121px;
+    background-position: 103px 9px;
+}
+.first .change{
+    display: inline-block;
+    width: 39px;
+    height: 40px;
+    padding-top: 6px;
+    text-align: center;
+    background: url(../Imgs/task09Imgs/change.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    color: #fff
+}
+.first .sellerText{
+    margin-left: 159px;
+}
+.dateText,.personText{
+    margin-left: 30px;
+}
+.first .allTimeText{
+    margin-left: -20px;
+}
+.first .date{
+    border: 1px solid #999;
+    background: none;
+}
+.first input[type="submit"]{
+    width: 51px;
+    height: 26px;
+    border: none;
+    background-color: #388ac1;
+    color: #fff;
+    font:12px/26px "simhei";
+    position: relative;
+    bottom: 15px;
+}
+/*第二部分*/
+.second{
+    width: 889px;
+}
+.second ul li{
+    height: 65px;
+    background-color: #fff;
+    color: #000;
+    margin-right: 4px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    float: left;
+}
+.second ul li:nth-child(1),.second ul li:nth-child(8){
+    width: 17px;
+    height: 35px;
+    padding: 15px 7px;
+    font-size: 50px;
+    color: #ccc;
+}
+.second ul li:nth-child(9){
+    width: 120px;
+    background: #fff url(../Imgs/task09Imgs/history.png) no-repeat 15px 17px;
+    margin-right: 0;
+}
+.second ul li:nth-child(9) span{
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+.second ul li:nth-child(2),
+.second ul li:nth-child(3),
+.second ul li:nth-child(4),
+.second ul li:nth-child(5),
+.second ul li:nth-child(6),
+.second ul li:nth-child(7){
+    width: 81px;
+    height: 45px;
+    font: 14px/18px "simhei";
+    padding: 10px 0 10px 30px;
+}
+.second .money{
+    font-size: 21px;
+    background: url(../Imgs/task09Imgs/dollor.png) no-repeat 0px 7px;
+    color: #ec6500;
+    line-height: 1.5;
+    padding-left: 12px;
+}
+.second ul li:nth-child(2),
+.second ul li:nth-child(3):hover,
+.second ul li:nth-child(4):hover,
+.second ul li:nth-child(5):hover,
+.second ul li:nth-child(6):hover,
+.second ul li:nth-child(7):hover{
+    height: 40px;
+    border-top:5px solid #4388c9;
+}
+
+/*第三部分*/
+.third p{
+    color: #000;
+    margin-left: 65px;
+    font-size: 14px;
+}
+.third > div{
+    width: 187px;
+    height: 71px;
+    background-color: #fff;
+    float: left;
+    padding-left: 10px;
+    margin-right: 29px;
+    position: relative;
+}
+.third>p+div{
+    margin-left: 65px;
+    border-left: 4px solid #43b29d;
+}
+.third > div:nth-child(3){
+    border-left: 4px solid #388ac1;
+}
+.third > div:nth-child(4){
+    border-left: 4px solid #cf4a36;
+}
+.third > div:last-child{
+    border-left: 4px solid #e2cd47;
+    margin-right: 0;
+}
+.third > div div{
+    width: 61px;
+    height: 47px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+.third>p+div div{
+    background-color: #43b29d;
+}
+.third > div:nth-child(3) div{
+    background-color: #388ac1;
+}
+.third > div:nth-child(4) div{
+    background-color: #cf4a36;
+}
+.third > div:last-child div{
+    background-color: #e2cd47;
+}
+.third > div .count{
+    color: #000;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/*第四部分*/
+.fourth .left,.fourth .right,.fifth .calendar,.fifth .carRankings{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    float: left;
+    margin-right: 9px;
+    color: #000;
+}
+.fourth .left{
+    width: 533px;
+    margin-left: 65px;
+}
+.fourth .right{
+    width: 345px;
+    margin-right: 0;
+    font-size: 14px;
+}
+.fourth .Ltop,.fifth .Ltop{
+    height: 20px;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0 10px 20px;
+    background-color: #f4f5f6;
+    font-size: 14px;
+}
+.fourth .Lbottom,.fifth .Lbottom{
+    background-color: #FFF;
+    padding: 10px 20px 0;
+    text-align: center;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Lbottom a{
+    width: 85px;
+    height: 27px;
+    margin-right: 5px;
+    background-color: #ededf0;
+    float: left;
+    color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+}
+.Lbottom a:hover,
+.Lbottom a:active{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+}
+.Lbottom .projectTable{
+    border: 1px solid #ccc;
+    clear: both;
+    padding: 30px 40px 0;
+    margin-bottom: 30px;
+    height: 230px;
+}
+.fourth .Lbottom table{
+    position: absolute;
+    background: #fff;
+}
+.Lbottom table:target{
+    z-index: 10;
+}
+.fourth .Lbottom table td{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.fourth .Lbottom table td:hover{
+    background-color: #ededf0;
+}
+.fourth .right .Lbottom{
+    height: 319px;
+    text-align: left;
+    padding-left: 50px;
+}
+.fourth .right .Lbottom>div{
+    padding-left: 20px;
+}
+.fourth .right .title,.fourth .right label{
+    color: #c3c2c2;    
+}
+.caption{
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.price,.principal{
+    float: left;
+    line-height: 20px;
+}
+.price{
+    padding-right:60px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: url(../Imgs/task09Imgs/money2.png) no-repeat 25px 25px;
+}
+.priceText{
+    padding-left: 10px;
+}
+.fourth .right .Lbottom .principal{
+    width: 153px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.projectDes{
+    clear: both;
+    height: 149px;
+    border-bottom: 1px solid #ccc;
+}
+.fourth .right .Lbottom div:last-child{
+    padding: 10px;
+}
+.fourth .right .Lbottom div:last-child input[type="checkbox"]{
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+.fourth .right .Lbottom div:last-child input[type="submit"]{
+    border: none;
+    background-color: #388ac1;   
+    color: #fff;
+    width: 51px;
+    height: 26px;
+    text-align: center;
+    float: right;
+}
+
+/*第五部分*/
+.fifth{
+    margin-left: 65px;
+}
+.fifth .calendar{
+    width: 362px;
+}
+.calendar ul{
+    margin-bottom: 10px;
+}
+.calendar ul li{
+    float: left;
+    margin-right: 5px;
+}
+.calendar ul li div,.calendar ul li i{
+    height: 21px;
+    line-height: 21px;
+    border:1px solid #ccc;
+    text-align: center;
+    float: left;
+}
+.calendar ul li:nth-child(1) div{
+    width: 48px;
+}
+.calendar ul li:nth-child(2) div{
+    width: 60px;
+    background: url(../Imgs/task09Imgs/riLiArrow.png) no-repeat 45px 8px;
+}
+.calendar ul li:nth-child(3) div{
+    width: 60px;
+}
+.calendar ul li:nth-child(4) button{
+    width: 64px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.calendar ul li i{
+    width: 15px;
+}
+.calendar ul li:nth-child(1) i,.calendar ul li:nth-child(3) i{
+    border-left: none;
+    background: url(../Imgs/task09Imgs/riLiArrow.png) no-repeat 3px 8px;
+}
+.calendar ul li:nth-child(2) i{
+    font-size: 20px;
+}
+.calendar ul li:nth-child(2) i:first-child{
+    border-right: none;
+}
+.calendar ul li:nth-child(2) i:last-child{
+    border-left: none;
+}
+.week{
+    border-top: 2px solid #a9cfec;
+    border-bottom: 2px solid #e1e1e2;
+}
+.week span{
+    display: inline-block;
+    margin-right: 25px;
+}
+.daysBox{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.daysBox div{
+    float: left;
+    width: 36px;
+    height: 40px;
+    text-align: center;
+    line-height: 14px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    border: 1px solid #fff;
+}
+.daysBox div span:first-child{
+    display: inline-block;
+    margin-top: 5px;
+}
+.daysBox div:first-child{
+    margin-left: 170px;
+}
+.daysBox .holiday,
+.daysBox .number2,
+.daysBox .number3,
+.daysBox .number9,
+.daysBox .number10,
+.daysBox .number16,
+.daysBox .number17,
+.daysBox .number23,
+.daysBox .number24,
+.daysBox .number30{
+    color: #d14c50;
+}
+.daysBox div:nth-child(9),
+.daysBox div:nth-child(12),
+.daysBox div:nth-child(19),
+.daysBox div:hover{
+    border: 1px solid #f5c426;
+}
+.fifth .carRankings{
+    width: 517px;
+    margin-right: 0;
+}
+.fifth .carRankings .Lbottom{
+    padding-bottom: 28px;
+}
+.fifth table{
+    width: 100%;
+}
+.fifth table .column1{
+    width: 15%;
+}
+.fifth table .column2{
+    width: 20%;
+}
+.fifth table th:nth-child(3),.fifth table tr td:nth-child(3){
+    text-align: left;
+    padding-left: 30px;
+}
+.fifth table tr:hover{
+    background-color: #ededf0;
+}
+.fifth table th,.fifth table td{
+    border: 1px solid #ccc;
+}
+.fifth table td i{
+    display: inline-block;
+    width: 200px;
+    height: 5px;
+    background-color: #dcdcdc;
+    margin-left: 20px;
+}
+.fifth tbody tr td i span{
+     display: block;
+     height: 5px;
+}
+/*CSS 3中的结构性伪类:nth-child,如果值为n代表:选择tbody其中所有的行;值为-n:代表都不选择;值为-n+3:代表选择开头三个;
+值为n+3:代表不选择开头两个,其余都选择*/
+.fifth tbody tr:nth-child(-n+3) td i span{
+    width: 80%;
+    background-color: #ec6e51;
+}
+.fifth tbody tr:nth-child(n+4) td i span{
+    width: 30%;
+    background-color: #7fcbf0;
 }
