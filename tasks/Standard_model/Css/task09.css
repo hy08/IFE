@@ -384,14 +384,16 @@ select,input[type="datetime"]{
     color: #000;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: -1px;
     font-size: 14px;
 }
 .Lbottom a:hover,
 .Lbottom a:active{
+    background-color: #fff;
     border: 1px solid #ccc;
     border-bottom: 1px solid #fff;
-    position: relative;
-    top: 1px;
     text-decoration: none;
 }
 .Lbottom .projectTable{
