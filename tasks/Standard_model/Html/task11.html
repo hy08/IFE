@@ -2,10 +2,151 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta content="yes" name="apple-touch-fullscreen">
 		<title>Task11</title>
-		<link rel="stylesheet" href="../Css/init.css" />
 		<link rel="stylesheet" href="../Css/task11.css" />
+		<script>
+		    !function(){var a="@charset \"utf-8\";html{color:#000;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:none}ins,a{text-decoration:none}",b=document.createElement("style");if(document.getElementsByTagName("head")[0].appendChild(b),b.styleSheet)b.styleSheet.disabled||(b.styleSheet.cssText=a);else try{b.innerHTML=a}catch(c){b.innerText=a}}();
+		    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+		</script>
 	</head>
 	<body>
+	    <header>
+	    	<div class="goBack">
+	    	    <a href="#">返回</a>
+	    	</div>
+	    	<h1>这是标题</h1>
+	    </header>
+	    <nav>
+	        <ul class="flex">
+	        	<li><a href="#">导航</a></li>
+	        	<li><a href="#">导航</a></li>
+	        	<li><a href="#">导航</a></li>
+	        	<li><a href="#">导航</a></li>
+	        	<li><a href="#">导航</a></li>
+	        </ul>
+	    </nav>
+	    <section class="first">
+	        <img class="banner" src="../Imgs/task11/task11Img01-min.jpg" alt="皮卡丘" />
+            <ul class="flex">
+            	<li>
+            	    <img src="../Imgs/task11/tags.png" alt="标签" />
+            	    <a href="#">标签</a>
+            	</li>
+            	<li>
+                    <img src="../Imgs/task11/tags.png" alt="标签" />
+                    <a href="#">标签</a>
+                </li>
+                <li>
+                    <img src="../Imgs/task11/tags.png" alt="标签" />
+                    <a href="#">标签</a>
+                </li>
+                <li>
+                    <img src="../Imgs/task11/tags.png" alt="标签" />
+                    <a href="#">标签</a>
+                </li>
+                <li>
+                    <img src="../Imgs/task11/tags.png" alt="标签" />
+                    <a href="#">标签</a>
+                </li>
+            </ul>
+            <div class="cols flex">
+            	<div>
+            	   <img src="../Imgs/task11/task11Img02-min.jpg" alt="皮卡丘" />
+            	   <h2>分栏一</h2>
+            	   <h3>分栏小标题</h3>
+            	</div>
+            	<div>
+            	    <img src="../Imgs/task11/task11Img02-min.jpg" alt="皮卡丘" />
+            	   <h2>分栏二</h2>
+                   <h3>分栏小标题</h3>
+            	</div>
+            	<div>
+            	    <img src="../Imgs/task11/task11Img02-min.jpg" alt="皮卡丘" />
+            	   <h2>分栏三</h2>
+                   <h3>分栏小标题</h3>
+            	</div>
+            </div>
+	    </section>
+	    <section class="second">
+	        <h2>模块一</h2>
+	        <div class="container flex">
+	            <div>
+        	    	<img src="../Imgs/task11/task11Img05-min.jpg" alt="皮卡丘" /><br />
+        	    	<img src="../Imgs/task11/task11Img05-min.jpg" alt="皮卡丘" />
+    	    	</div>
+    	    	<div class="text">
+        	    	<div>这是文案</div>
+        	    	<div>这是文案</div>
+        	    	<div>这是文案</div>
+        	    	<div>这是文案</div>
+    	    	</div>
+    	    	<div class="text">
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                </div>
+	    	</div>
+	    </section>
+	    <section class="third">
+	        <h2>模块二</h2>
+	        <div class="container flex">
+    	    	<div>
+                    <img src="../Imgs/task11/task11Img06-min.jpg" alt="皮卡丘" /><br />
+                    <img src="../Imgs/task11/task11Img06-min.jpg" alt="皮卡丘" />
+                </div>
+                <div class="text">
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                </div>
+                <div class="text">
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                    <div>这是文案</div>
+                </div>
+	    	</div>
+	    </section>
+	    <section class="fourth">
+	    	<div class="flex">
+	    	    <img src="../Imgs/task11/task11Img03-min.jpg" alt="皮卡丘" />
+	    	    <article>
+    	    	    <h4>这是文章标题字号是22的文章标题</h4>
+    	    	    <p>
+        	    	    <span class="source">文章来源</span>
+        	    	    <span class="time">6分钟前</span>
+    	    	    </p>
+	    	    </article>
+	    	</div>
+	    	<div class="flex">
+	    	    <img src="../Imgs/task11/task11Img03-min.jpg" alt="皮卡丘" />
+	    	    <article>
+                    <h4>这是文章标题字</h4>
+                    <p>
+                        <span class="source">文章来源</span>
+                        <span class="time">7分钟前</span>
+                    </p>
+                </article>
+	    	</div>
+	    	<div>
+                <h4>这也是文章标题字号是22的文章标题</h4>
+                <article>
+                    <div class="flex">
+                        <img src="../Imgs/task11/task11Img04-min.jpg" alt="皮卡丘" />
+                        <img src="../Imgs/task11/task11Img04-min.jpg" alt="皮卡丘" />
+                        <img src="../Imgs/task11/task11Img04-min.jpg" alt="皮卡丘" />
+                    </div>
+                    <p>
+                        <span class="source">文章来源</span>
+                        <span class="time">8分钟前</span>
+                    </p>
+                </article>
+	    	</div>
+	    </section>
 	</body>
 </html>

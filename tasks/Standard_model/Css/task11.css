@@ -1,0 +1,171 @@
+body{
+    background-color: #f5f5f5;
+}
+a{
+    color: #000;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+/*头部区域*/
+header{
+    background-color: #91D4DA;
+    color: #fff;
+    line-height: 1.15rem;
+    text-align: center;
+    font-size: 16px;
+    height: 1.15rem;
+    position: relative;
+}
+header .goBack{
+    left: 1%;
+    position: absolute;
+    padding-left: 1em;
+    background: url(../Imgs/task11/task11ImgBack.png) no-repeat 0;
+    background-size: calc(25%)
+}
+header a{
+    color: #fff;
+}
+/*导航区*/
+nav,.first,.second,.third,.fourth{
+    background-color: #fff;
+}
+nav{
+    height: 1.15rem;
+}
+nav ul,.first ul{
+    justify-content: space-around;
+    height: 1.15rem;
+}
+nav li{
+    border-bottom: 4px solid #fff;   
+    text-align: center;
+    line-height: 1.15rem;
+    flex: auto;
+}
+nav li:hover{
+    border-bottom: 4px solid #91D4DA;   
+}
+/*第一节*/
+.first{
+    margin-bottom: 0.5rem;
+}
+.first .banner{
+    width: 100%;
+    height: 50vmin;
+}
+.first ul{
+    height: 2.25rem;
+    padding: 0.3rem 0;
+    border-bottom: 2px solid #ccc;
+    margin: 0 0.2rem;
+}
+.first ul li{
+    text-align: center;
+}
+.first ul img{
+    height: 1.2rem;
+    width: 1.2rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+.cols{
+    padding-top: 0.3rem;
+    margin: 0 0.2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+.cols img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.cols div{
+    -moz-box-flex: 1;
+    flex: 1 1 0;
+    margin-bottom: 0.5rem;
+}
+.cols div:nth-child(2){
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+}
+
+/*模块二*/
+.second,.third{
+    padding: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.second h2,.third h2{
+    border-bottom: 2px solid #f5f5f5;
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 0 0.5rem;
+}
+.second .container,.third .container{
+    flex-flow: row;
+    justify-content: space-between;
+}
+.second .container :nth-child(1),.third .container :nth-child(1){
+    flex: 1 1 0;
+}
+.second .container .text:nth-child(2),.third .container .text:nth-child(2){
+    flex: 2 0 auto;
+    padding: 0 0.2rem;
+}
+.second .container :nth-child(3),.third .container :nth-child(3){
+    flex: 2 0 auto;
+}
+.second img,.third img{
+    height: 2.27rem;
+    width: 2.43rem;
+    border: 1px solid #fbd585;
+}
+.second .text div,.third .text div{
+    background-color: #f5f5f5;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+.second .text :nth-child(-n+1),.third .text :nth-child(-n+1){
+    margin-top: 0;
+}
+/*第四部分*/
+.fourth{
+    margin-bottom: 1rem;
+}
+.fourth>div{
+    padding: 0.2rem;
+    border-bottom: 4px solid #f5f5f5;
+}
+.fourth img{
+    height: 2.43rem;
+    width: 2.43rem;
+    border: 1px solid #ccc;
+}
+.fourth h4{
+    font-size: 22px;
+    margin: 0 0 0.4rem;
+}
+.fourth span{
+    color: #ccc;
+}
+.fourth div:nth-child(1),.fourth div:nth-child(2){
+    flex-flow: row;
+}
+.fourth div:nth-child(1) article,.fourth div:nth-child(2) article{
+    margin-left: 0.2rem;
+}
+.fourth div:nth-child(2) p{
+    margin-top: 1.2rem;
+}
+.fourth div:last-child{
+    border-bottom: none;
+}
+.fourth div:last-child div{
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}

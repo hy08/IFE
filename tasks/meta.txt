@@ -1,0 +1,69 @@
+meta常用标签含义：
+
+1、keywords(关键字)
+说明：用于告诉搜索引擎，你网页的关键字。
+举例：
+<meta name="keywords" content="Lxxyx,博客，文科生，前端">
+
+2、description(网站内容的描述)
+说明：用于告诉搜索引擎，你网站的主要内容。
+举例：
+<meta name="description" content="文科生，热爱前端与编程。目前大二，这是我的前端博客"> 
+
+3、robots(定义搜索引擎爬虫的索引方式)
+    说明：robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引。
+    content的参数有all,none,index,noindex,follow,nofollow。默认是all。
+    举例：
+    <meta name="robots" content="none"> 
+    具体参数如下：
+    1.none : 搜索引擎将忽略此网页，等价于noindex，nofollow。
+    2.noindex : 搜索引擎不索引此网页。
+    3.nofollow: 搜索引擎不继续通过此网页的链接索引搜索其它的网页。
+    4.all : 搜索引擎将索引此网页与继续通过此网页的链接索引，等价于index，follow。
+    5.index : 搜索引擎索引此网页。
+    6.follow : 搜索引擎继续通过此网页的链接索引搜索其它的网页。
+
+4、author(作者)
+说明：用于标注网页作者
+举例：
+<meta name="author" content="Lxxyx,841380530@qq.com"> 
+
+
+移动端常用：
+
+5、<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame
+
+6、国内的主流浏览器都是双核浏览器：基于Webkit的内核用于常用网站的高速浏览，
+基于IE的内核主要用于部分网银、政府、办公系统等网站的正常使用。
+以360浏览器为例，我们优先通过Webkit内核渲染主流网站，只有少量的网站通过IE内核渲染，以保证页面兼容性。
+
+若页面需默认用极速核，增加标签：<meta name="renderer" content="webkit"> 
+若页面需默认用ie兼容内核，增加标签：<meta name="renderer" content="ie-comp"> 
+若页面需默认用ie标准内核，增加标签：<meta name="renderer" content="ie-stand"> 
+content的取值为webkit,ie-comp,ie-stand之一，区分大小写，分别代表用webkit内核，IE兼容内核，IE标准内核。
+
+7、cache-control(指定请求和响应遵循的缓存机制)
+<meta http-equiv="cache-control" content="no-cache">
+共有以下几种用法：
+    no-cache: 先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。
+    no-store: 不允许缓存，每次都要去服务器上，下载完整的响应。（安全措施）
+    public : 缓存所有响应，但并非必须。因为max-age也可以做到相同效果
+    private : 只为单个用户缓存，因此不允许任何中继进行缓存。（比如说CDN就不允许缓存private的响应）
+    maxage : 表示当前请求开始，该响应在多久内能被缓存和重用，而不去服务器重新请求。例如：max-age=60表示响应可以再缓存和重用 60 秒。
+
+8、expires(网页到期时间)
+说明:用于设定网页的到期时间，过期后网页必须到服务器上重新传输。
+举例：
+<meta http-equiv="expires" content="Sunday 26 October 2016 01:00 GMT" />
+
+9、<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+上面的代码依次表示设置宽度为设备的宽度，默认不缩放，不允许用户缩放（即禁止缩放），在网页加载时隐藏地址栏与导航栏（ios7.1新增）。
+
+10、是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+11、
+忽略页面中的数字识别为电话号码：<meta name="format-detection" content="telephone=no" />
+同样还有一个email识别：<meta name="format-detection" content="email=no" />
+当然两者可以写在一起:<meta name="format-detection" content="telphone=no, email=no" />
