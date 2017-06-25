@@ -1,0 +1,144 @@
+table{
+    width: 200px;
+    margin-bottom: 20px;
+}
+table .column1{
+    width: 15%;
+}
+table .column2{
+    width: 60%;
+}
+table .column3{
+    width: 25%;
+}
+td,th{
+    height: 20px; 
+    border: 2px solid #fff;
+}
+th{
+    background-color: #000;
+    color: #fff;
+}
+tbody tr:nth-child(2n) td{
+    background-color: #ccc;
+}
+tbody tr:nth-child(-n+3){
+    color: red;
+}
+td:nth-child(2){
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 198px;
+    margin-bottom: 20px;
+}
+input[type="text"]:focus{
+    /*动画命令*/ 
+    animation:leftAnimation 4s;
+    -moz-animation:widthAnimation 4s; /* Firefox */
+    -webkit-animation:widthAnimation 4s; /* Safari and Chrome */
+    -o-animation:widthAnimation 4s; /* Opera */
+
+}
+/*写动画规则*/
+@keyframes widthAnimation
+{
+from {width:198px;}
+50% {width:400px;}
+to {width:198px;}
+}
+
+@-moz-keyframes widthAnimation /* Firefox */
+{
+from {width:198px;}
+50% {width:400px;}
+to {width:198px;}
+}
+
+@-webkit-keyframes widthAnimation /* Safari and Chrome */
+{
+from {width:198px;}
+50% {width:400px;}
+to {width:198px;}
+}
+
+@-o-keyframes widthAnimation /* Opera */
+{
+from {width:198px;}
+50% {width:400px;}
+to {width:198px;}
+}
+
+/*Banner图轮流播放*/
+.banner{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+.banner li{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -100%;
+}
+.banner ul :nth-child(1){
+    background: red;
+}
+.banner ul :nth-child(2){
+    background: #FF0;
+}
+.banner ul :nth-child(3){
+    background: #0088CC;
+}
+.alink{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.alink a{
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 2px;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    font-size: 18px;
+}
+.alink a:hover{
+    text-decoration: none;
+}
+/*关键*/
+#target1:target,#target2:target,#target3:target{
+    animation: leftAnimation 2s;
+    left: 0;
+    z-index: 10;
+}
+/*写动画规则*/
+@keyframes leftAnimation
+{
+from {left: -100%;}
+to {left: 0;}
+}
+
+@-moz-keyframes leftAnimation /* Firefox */
+{
+from {left: -100%;}
+to {left: 0;}
+}
+
+@-webkit-keyframes leftAnimation /* Safari and Chrome */
+{
+from {left: -100%;}
+to {left: 0;}
+}
+
+@-o-keyframes leftAnimation /* Opera */
+{
+from {left: -100%;}
+to {left: 0;}
+}
