@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MDN-JS基础01</title>
+	</head>
+	<body>
+	    <h1></h1>
+	    <button>单机我！</button>
+	    <script>
+	        //获取元素
+	        var myButton = document.querySelector('button');
+            var myHeading = document.querySelector('h1');
+            //设置函数
+            function setUserName() {
+              var myName = prompt('Please enter your name.');
+              localStorage.setItem('name', myName);
+              myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+            }
+            if(!localStorage.getItem('name')) {
+              setUserName();
+            }
+            else {
+              var storedName = localStorage.getItem('name');
+              myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+            };
+            myButton.onclick = function() {
+              setUserName();
+            }
+	    </script>
+	</body>
+</html>

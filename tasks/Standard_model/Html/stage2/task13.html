@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JS初体验(就当从0开始)</title>
+	</head>
+	<body>
+	    <label for="aqi-input">请输入杭州今天的空气质量：<input type="text" id="aqi-input" /></label>
+	    <button id="btn">确认填写</button>
+	    <div>您输入的值是：<span id="aqi-display">尚无输入</span></div>
+	    <script>
+	        (function() {
+                //获取元素
+	        	var btn=document.getElementById("btn");
+	        	var inputVal=document.getElementById("aqi-input");
+	        	var display=document.getElementById("aqi-display");
+                //DOM1事件处理
+	        	btn.onclick=function () {
+	        	    if(inputVal.value){
+	        	      display.innerHTML=inputVal.value;    
+	        	    }
+	        		else{
+	        		    alert("请输入内容！");
+	        		}
+	        	}
+	        })();
+	    </script>
+	</body>
+</html>
