@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Task14 | Js基础知识</title>
+	</head>
+
+	<body>
+
+		<h3>污染城市列表</h3>
+		<ul id="aqi-list">
+			<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+		</ul>
+
+		<script type="text/javascript">
+			var aqiData = [
+				["北京", 90],
+				["上海", 50],
+				["福州", 10],
+				["广州", 50],
+				["成都", 90],
+				["西安", 100]
+			];
+			(function() {
+
+				/*
+				在注释下方编写代码
+				遍历读取aqiData中各个城市的数据
+				将空气质量指数大于60的城市显示到aqi-list的列表中
+				*/
+				var count=0;
+				aqiData.forEach(function (item) {
+					if(item[1]>=60)
+					{
+						var cityLi=document.createElement("li");
+						var node=document.createTextNode(item[0]);
+						cityLi.appendChild(node);
+						document.getElementById("aqi-list").appendChild(cityLi);
+						count++;
+					}
+				});
+				if(count==0)
+				{
+					var goodNews=document.createElement("li");
+					var node=document.createTextNode("没有污染超标的城市哦~");
+					goodNews.appendChild(node);
+					document.getElementById("aqi-list").appendChild(goodNews);
+				}
+			})();
+		</script>
+		<script>
+			//数组的新建、访问（遍历）、修改（增加元素，删除元素）
+			var newArray=["aa","bb"];
+			newArray.forEach(function (item,index,array) {
+				console.log(item,index);
+			});
+			newArray.push("cc"); //push添加元素到数组的末尾
+			console.log(newArray);
+			newArray.unshift("HANYU"); //unshift添加元素到数组的开头
+			console.log(newArray);
+			newArray.pop();//删除数组的末尾元素
+			console.log(newArray);
+			newArray.shift(); //删除数组的开始元素
+			console.log(newArray);
+			//找到某个元素的索引indexOf()并且通过索引删除该元素splice(index,删除元素个数)
+			var array2=["AA","BB","CC","DD"];
+			console.log(array2);
+			var index=array2.indexOf("BB");
+			var removeArray=array2.splice(index,2);
+			console.log(array2);
+			//复制一个数组
+			var array2Copy=array2.slice();
+			console.log(array2Copy);
+			//三种数组创建方法
+			var arrayFirst=[1,2,3,4,5];
+			var arraySecond=new Array("a","b","c","d");
+			var arrayThird=new Array(4);
+			console.log(arrayFirst);
+			console.log(arraySecond);
+			console.log(arrayThird);
+		</script>
+	</body>
+
+</html>
