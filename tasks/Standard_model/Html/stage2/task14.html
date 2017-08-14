@@ -31,27 +31,21 @@
 				遍历读取aqiData中各个城市的数据
 				将空气质量指数大于60的城市显示到aqi-list的列表中
 				*/
-				var count=0;
-				aqiData.forEach(function (item) {
+				aqiData.sort(function (a,b) {
+					return b[1]-a[1];
+				});
+				var sortNum=["一","二","三"];
+				var liStr="";
+				aqiData.forEach(function (item,i) {
 					if(item[1]>=60)
 					{
-						var cityLi=document.createElement("li");
-						var node=document.createTextNode(item[0]);
-						cityLi.appendChild(node);
-						document.getElementById("aqi-list").appendChild(cityLi);
-						count++;
+						liStr += "<li>第"+sortNum[i]+"名："+item[0]+", "+item[1]+"</li>";
 					}
 				});
-				if(count==0)
-				{
-					var goodNews=document.createElement("li");
-					var node=document.createTextNode("没有污染超标的城市哦~");
-					goodNews.appendChild(node);
-					document.getElementById("aqi-list").appendChild(goodNews);
-				}
+				document.getElementById("aqi-list").innerHTML=liStr;
 			})();
 		</script>
-		<script>
+		<!--<script>
 			//数组的新建、访问（遍历）、修改（增加元素，删除元素）
 			var newArray=["aa","bb"];
 			newArray.forEach(function (item,index,array) {
@@ -81,7 +75,7 @@
 			console.log(arrayFirst);
 			console.log(arraySecond);
 			console.log(arrayThird);
-		</script>
+		</script>-->
 	</body>
 
 </html>
