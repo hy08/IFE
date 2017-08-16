@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style>
+    	.errorMessage{
+    		color: red;
+    	}
+    	.hide{
+    		display: none;
+    	}
+    	#aqi-table{
+    		margin-top: 20px;
+    	}
+    	table{
+    		border-collapse: collapse;
+    	}
+    	table,td,th,tr{
+    		border: 1px solid blue;
+    		padding: 0;
+    		text-align: center;
+    	}
+    	td,th{
+    		width: 100px;
+    		height: 50px;
+    	}
+    </style>
+  </head>
+<body>
+
+  <div>
+    <label>城市名称：<input id="aqi-city-input" type="text"></label><span class="city errorMessage hide">城市名必须为中英文字符！</span><br>
+    <label>空气质量指数：<input id="aqi-value-input" type="text"></label><span class="num errorMessage hide">必须为整数</span><br>
+    <button id="add-btn">确认添加</button>
+  </div>
+  <table id="aqi-table" cellpadding="0" cellspacing="0">
+  <!-- 
+    <tr>
+      <td>城市</td><td>空气质量</td><td>操作</td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+   -->
+  </table>
+<script src="../../Js/task16.js"></script>
+</body>
+</html>

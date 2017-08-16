@@ -39,7 +39,7 @@ function getData() {
   coding here
   */
   var data=[];
-  var lis=document.getElementsByTagName("li");
+  var lis=document.getElementById("source").getElementsByTagName("li");
   for(var li=0;li<lis.length;li++){
   	var liValue=lis[li].innerText;
   	var dataChild=new Array(2);
@@ -88,7 +88,6 @@ function btnHandle() {
   var aqiData = getData();
   aqiData = sortAqiData(aqiData);
   render(aqiData);
-  document.getElementById("sort-btn").disabled="true";
 }
 
 
@@ -96,7 +95,7 @@ function init() {
 
   // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
 	var sortBtn=document.getElementById("sort-btn");
-	sortBtn.addEventListener('click',btnHandle,false);
+	sortBtn.addEventListener("click",btnHandle,false);
 }
 
 init();
