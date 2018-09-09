@@ -37,7 +37,6 @@ header img{
 }
 
 main{
-    overflow: hidden; /*为什么没有这条设置就会留白*/
     width: 1280px;
     margin: auto;
 }
